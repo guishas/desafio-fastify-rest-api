@@ -7,7 +7,7 @@
     "knex": "node --import tsx ./node_modules/.bin/knex",
     "lint": "eslint src --ext .ts --fix",
     "build": "tsup src --out-dir build",
-    "test": "vitest"
+    "test": "vitest --no-file-parallelism"
   },
   "keywords": [],
   "author": "",
@@ -16,9 +16,12 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^22.10.2",
+    "@types/supertest": "^6.0.2",
     "eslint": "^8.57.1",
+    "supertest": "^7.0.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   },
   "dependencies": {
     "@fastify/cookie": "^11.0.1",
